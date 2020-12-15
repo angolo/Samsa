@@ -3,16 +3,15 @@ package com.angolo.samsa.adapters
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import inflate
+import com.angolo.samsa.inflate
+
 
 abstract class AbstractAdapter<TYPE>(
     protected var itemList: List<TYPE>,
     protected val layoutId : Int) : RecyclerView.Adapter<AbstractAdapter.Holder>(){
 
-
     override fun getItemCount() = itemList.size
-
-
+    
     override fun onCreateViewHolder(parent: ViewGroup,viewType: Int): Holder {
         val view = parent inflate layoutId
         val holder= Holder(view)
