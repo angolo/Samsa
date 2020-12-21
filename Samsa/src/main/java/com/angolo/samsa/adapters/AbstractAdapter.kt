@@ -11,11 +11,12 @@ abstract class AbstractAdapter<TYPE>(
     protected val layoutId : Int) : RecyclerView.Adapter<AbstractAdapter.Holder>(){
 
     override fun getItemCount() = itemList.size
-    
+
     override fun onCreateViewHolder(parent: ViewGroup,viewType: Int): Holder {
         val view = parent inflate layoutId
         val holder= Holder(view)
         val itemView= holder.itemView
+
 
         //qui imposto il listener per l'item
         itemView.setOnClickListener {
