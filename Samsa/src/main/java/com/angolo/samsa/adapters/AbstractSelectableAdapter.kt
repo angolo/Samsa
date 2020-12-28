@@ -36,7 +36,7 @@ abstract class AbstractSelectableAdapter<TYPE>(
         val selection = getSelectedItems()
         selectedItems.clear()
         for (i in selection!!) {
-            notifyItemChanged(i!!)
+            notifyItemChanged(i)
         }
     }
 

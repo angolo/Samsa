@@ -9,3 +9,6 @@ inline fun <T : ViewBinding> Fragment.viewBinding(
     lazy(LazyThreadSafetyMode.NONE) {
         bindingInflater.invoke(layoutInflater)
     }
+
+
+
