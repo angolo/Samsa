@@ -13,5 +13,6 @@ sealed class Permission(vararg val permissions: String) {
 
     object Location : Permission( ACCESS_FINE_LOCATION, ACCESS_COARSE_LOCATION)
 
+    object LocationBackground : Permission(ACCESS_FINE_LOCATION, ACCESS_COARSE_LOCATION , ACCESS_BACKGROUND_LOCATION)
 
 }
